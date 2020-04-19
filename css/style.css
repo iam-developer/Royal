@@ -3,6 +3,14 @@
     font-family: TTCommon;
     src: url('../Fonts/FontsFree-Net-TTCommons-Bold.ttf');
 }
+@font-face {
+    font-family: TTCommonDemiBold;
+    src: url('../Fonts/TTCommons-DemiBold.ttf');
+}
+@font-face {
+    font-family: TTCommonLightItalic;
+    src: url('../Fonts/TTCommons-LightItalic.ttf');
+}
 
 body {
     padding: 0;
@@ -71,8 +79,9 @@ a {
     margin: 0 auto;
 }
 .logo_img {
-    padding: 20px;
+    padding: 20px 30px;
     height: 120px;
+    background-color: #1e1e21;
 }
 .logo {
     display: flex;
@@ -86,8 +95,9 @@ a {
   #change_lang {
       padding: 0 20px 0 70px;
       border: none;
-      background-color: #171517;
+      background-color: transparent;
       color: #fff;
+      outline: none;
   }
   #header_buttons {
     display: flex;
@@ -95,16 +105,18 @@ a {
     align-items: center;
 }
   .registrate_btn a {
-    background-color: #f1d198;
-    padding: 18px 46px;
+    background: linear-gradient(to right, #f1d198, #d08e40);
+    padding: 18px 36px;
     color: #23242b;
     font-size: 14px;
     border-radius: 24px 0;
     font-family: 'Montserrat Bold', sans-serif;
     transition: 0.3s;
-    border: 1px solid #f1d198;
+    border: 0;
+    box-shadow: 0 5px 45px -12px #d08e40;
   }
   .registrate_btn a:hover {
+    background: linear-gradient(to right, #d08e40, #f1d198);
     color: #000;
     text-decoration: none;
   }
@@ -137,14 +149,15 @@ a {
   }
   .header_title span {
       color: #f1d198;
-      border: 1px solid #f1d198;
+      border: 1px solid #e2ba81;
       border-radius: 0 10px;
-      font-style: italic;
-      padding: 0 8px 8px 8px;
+      padding: 5px 5px 0px 2px;
+      font-family: TTCommonLightItalic;
+      font-weight: 100;
   }
   .header_text {
     font-family: 'Montserrat Medium', sans-serif;
-    color: #545461;
+    color: #9c9c9c;
     text-align: center;
     padding: 20px 111px;
     font-size: 14px;
@@ -155,7 +168,7 @@ a {
 }
   .header_block {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       justify-content: flex-end;
       padding: 0;
       width: 376px;
@@ -166,11 +179,12 @@ a {
   }
   .header_block_text {
     color: #e6c087;
-    font-size: 18px;
+    font-size: 14px;
     padding-top: 10px;
-    padding-right: 10px;
+    padding-right: 20px;
     position: absolute;
-    font-family: TTCommon;
+    font-family: TTCommonDemiBold;
+    text-transform: uppercase;
 }
   .header_container {
       justify-content: center;
@@ -192,19 +206,35 @@ a {
     bottom: 0;
   }
   .header_btn a {
-    background-color: #131316;
+    background: linear-gradient(to right, #f1d198, #d08e40);
+    color: #23242b;
+    border: 1px solid #d08e40;
+    padding: 18px 46px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 24px 0;
+    font-family: 'Montserrat Bold', sans-serif;
+    transition: 0.3s;
+    box-shadow: 0 8px 49px -12px #d08e40;
+  }
+  .header_btn a:hover {
+      background: linear-gradient(to right, #d08e40, #f1d198);
+      color: #23242b;
+      text-decoration: none;
+  }
+  .header_btn2 a {
     color: #a1a1a2;
-    border: 1px solid #f1d198;
+    border: 1px solid #d08e40;
     padding: 18px 46px;
     font-size: 14px;
     border-radius: 24px 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Medium', sans-serif;
     transition: 0.3s;
   }
-  .header_btn a:hover {
-      background-color: #f1d198;
-      color: #23242b;
-      text-decoration: none;
+  .header_btn2 a:hover {
+    background: linear-gradient(to right, #d08e40, #f1d198);
+    color: #23242b;
+    text-decoration: none;
   }
   .header_buttons {
       padding: 80px 0;
@@ -221,7 +251,7 @@ a {
   }
    .sidebar_title {
        color: #010101;
-       font-family: 'Montserrat Bold', sans-serif;
+       font-family: TTCommon;
        font-size: 36px;
        font-weight: bold;
        padding-bottom: 100px;
@@ -267,37 +297,39 @@ a {
        background-color: #eeeeee;
    }
 
-   .sidebar_btn {
-       border: 1px solid #d09f65;
-       padding: 25px;
-       border-radius: 24px 0;
-       text-align: center;
-       margin: 86px 0;
-       cursor: pointer;
-       transition: 0.3s;
-   }
    .sidebar_btn a {
-       color: #1f1e21;
-       font-size: 18px;
-       font-family: 'Montserrat Medium', sans-serif;
-   }
-   .sidebar_btn:hover {
-        background-color: #f1d198;
-        color: #23242b;
+        color: #1f1e21;
+        font-size: 14px;
+        font-family: 'Montserrat Medium', sans-serif;
+        border: 1px solid #d09f65;
+        padding: 18px 24px;
+        border-radius: 24px 0;
+        text-align: center;
+        margin: 50px 0 70px;
+        cursor: pointer;
+        transition: 0.3s;
    }
    .sidebar_btn a:hover {
-       text-decoration: none;
+        background: linear-gradient(to right, #d08e40, #f1d198);
+        color: #23242b;
+        text-decoration: none;
    }
 
    /*  CONTENT  */
    .content {
         width: 100%;
         margin: 0 auto;
-        padding: 120px 0;
+        padding: 150px 0;
         background-image: url(../img/content.png);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
+   }
+   .strelka {
+        position: relative;
+        top: 5px;
+        left: 350px;
+        width: 620px;
    }
    #content {
        display: flex;
@@ -308,17 +340,25 @@ a {
        font-size: 19px;
        text-align: center;
        font-weight: bold;
-       padding: 20px 0;
+       padding-bottom: 20px;
+       position: relative;
+       top: -38px;
+       font-family: TTCommon;
    }
    .card {
        margin: 0 auto;
    }
    .cost {
-       font-size: 38px;
-       color: #fff;
-       text-align: center;
-       font-weight: bold;
-       padding: 20px 0;
+    padding-top: 8px;
+    font-family: TTCommon;
+    width: 200px;
+    font-size: 38px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    margin: 23px auto;
+    border: 1px solid #e3bb82;
+    border-radius: 20px 0;
    }
    .content_text {
        color: #858485;
@@ -327,22 +367,24 @@ a {
        text-align: center;
    }
    .roght_content_title {
-       font-size: 36px;
-       color: #fff;
-       text-align: center;
-       padding-top: 65px;
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    font-family: TTCommon;
+    padding-top: 12px;
    }
    .x {
-       margin-top: 87px;
+       margin-top: 39px;
        text-align: right;
    }
    .right_content_text {
        font-size: 12px;
        font-family: 'Montserrat Medium', sans-serif;
        color: #ffffff;
-       border: 1px solid #2e2d31;
+       border: 1px solid #1f1e21;
        padding: 22px 43px;
        margin: 0;
+       background-color: #1b1b1d;
    }
    .padding {
        padding: 0;
@@ -369,21 +411,73 @@ a {
     background-color: #1f1e21;
 }
 .footer_text {
-    color: #fff;
+    margin: 0;
+    color: #b4b4b5;
     font-size: 14px;
     font-family: 'Montserrat Medium', sans-serif;
-
+    line-height: 28px;
+}
+.footer_text_web {
+    color: #b4b4b5;
+    font-size: 14px;
+    font-family: 'Montserrat Bold', sans-serif;
 }
 .footer_text_2 {
     color: #7a797b;
+    font-family: 'Montserrat Medium', sans-serif;
+    margin-left: 24px;
 }
 #footer_logo {
-    padding: 0;
+    padding: 16px;
+    background-color: #262528;
 }
 .footer_links {
-    color: #fff;
+    color: #b4b4b5;
     transition: 0.3s;
 }
 .footer_links:hover {
     text-decoration: none;
+    color: #fff;
+}
+.footer_icon {
+    padding: 7px;
+}
+
+.carta {
+    width: 380px;
+    height: 239px;
+    background-image: url(../img/bg_card.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: -24px;
+    margin: 0 auto;
+}
+.carta_img {
+    position: absolute;
+    bottom: 45px;
+}
+.txt1 {
+    font-size: 25px;
+    font-family: 'PlayfairDisplay Bold';
+    color: #fff;
+}
+.txt2 {
+    color: #dcb57e;
+    font-size: 14px;
+    font-family: 'Montserrat Bold', sans-serif;
+}
+.carta_text {
+    text-align: right;
+    padding: 20px;
+}
+.num {
+    font-family: 'Montserrat Medium', sans-serif;
+    font-size: 20px;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    color: #fff;
 }

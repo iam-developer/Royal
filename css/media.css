@@ -10,6 +10,15 @@
     #padding_right {
         padding-right: 45px;
     }
+    .strelka {
+        display: none;
+    }
+    .content {
+        padding: 120px 0;
+    }
+    .roght_content_title {
+        font-size: 30px;
+    }
 }
  
  @media screen and (max-width: 1024px) {
@@ -34,6 +43,9 @@
  @media screen and (max-width: 768px) {
     .header_container {
         justify-content: center;
+    }
+    .content_title {
+        padding-top: 50px;
     }
     .header_block {
         margin: 40px 10px 0;
@@ -70,7 +82,7 @@
         margin: 55px 0;
     }
     #padding_right {
-        padding-right: 30px;
+        padding-right: 50px;
     }
     .right_content_text {
         padding: 22px 23px;
@@ -78,11 +90,18 @@
     #radius2 {
         padding-right: 40px;
     }
+    #change_lang {
+        margin-left: -120px;
+        padding: 0;
+    }
     .footer_container {
         flex-direction: column;
     }
     .footer_block2 {
         padding-top: 20px;
+    }
+    .header_btn2 {
+        text-align: center;
     }
  }
 
@@ -94,6 +113,9 @@
         flex-direction: column;
         text-align: center;
         line-height: 60px;
+    }
+    .footer_text_2 {
+        margin-left: 0;
     }
     #header_buttons {
         display: none;
@@ -145,6 +167,7 @@
     }
     .footer_text2 {
         padding-top: 20px;
+        margin-left: 0;
     }
     .side_bar_2 {
         padding: 40px 0 0;
@@ -158,14 +181,20 @@
     }
     .header_title {
         padding-top: 80px;
-        font-size: 34px;
+        font-size: 30px;
     }
     .logo_img {
         height: 100px;
     }
     .header_text {
-        padding: 20px 30px;
+        padding: 20px 52px;
         font-size: 18px;
+        line-height: 28px;
+    }
+    .carta {
+        width: 270px;
+        height: 180px;
+        border-radius: 18px;
     }
  }
  @media screen and (max-width: 395px) {
@@ -177,7 +206,9 @@
     .x {
         margin-top: 148px;
     }
- }
+    .header_text {
+        padding: 20px 30px;
+    }
  @media screen and (max-width: 325px) {
     .x {
         margin-top: 160px;
